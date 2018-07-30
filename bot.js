@@ -1155,5 +1155,8 @@ client.on("message", (message) => {
     }
 });
 
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","¤ Member of R3bMC"));
+    });
 
 client.login(process.env.BOT_TOKEN);
